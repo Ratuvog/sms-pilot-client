@@ -16,7 +16,7 @@ export default class SmsPilotClient {
       send: [{
         from: this.from,
         to,
-        text: `Код подтверждения: ${text}`
+        text: text
       }]
     };
     return { json: JSON.stringify(q) };
