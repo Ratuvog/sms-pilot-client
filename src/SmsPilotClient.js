@@ -1,4 +1,5 @@
 import request from 'request';
+import errorList from 'SmsPilotClientErrors';
 
 export default class SmsPilotClient {
   constructor(options = {}) {
@@ -39,4 +40,8 @@ export default class SmsPilotClient {
       });
     });
   }
-}
+
+  humanizeError(code) {
+    return errorList[code];
+  }
+};
