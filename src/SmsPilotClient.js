@@ -1,5 +1,5 @@
 import request from 'request';
-import errorList from 'SmsPilotClientErrors';
+import errorList from './SmsPilotClientErrors';
 
 export default class SmsPilotClient {
   constructor(options = {}) {
